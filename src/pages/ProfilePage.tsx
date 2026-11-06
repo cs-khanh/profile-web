@@ -1,3 +1,4 @@
+import ArrowIcon from '../components/ArrowIcon';
 import { motion } from 'motion/react';
 import EditorialSculpture from '../EditorialSculpture';
 import type { Language } from '../components/SiteHeader';
@@ -28,7 +29,7 @@ export default function ProfilePage({ theme, language }: { theme: 'light' | 'dar
       <section className="profile-page-section experience-page-section" aria-labelledby="experience-title">
         <motion.h2 {...reveal} id="experience-title">{vi ? 'Kinh nghiệm' : 'Experience'}</motion.h2>
         <motion.article className="experience-entry" {...reveal}>
-          <div><h3>{vi ? 'Kỹ sư dữ liệu' : 'Data Engineer'} · <a className="experience-company" href="https://ncc.plus/" target="_blank" rel="noreferrer">NCCPLUS <span aria-hidden="true">↗</span></a></h3><span>{vi ? 'Tháng 8 năm 2025 – nay' : 'August 2025 to present'}</span></div>
+          <div><h3>{vi ? 'Kỹ sư dữ liệu' : 'Data Engineer'} · <a className="experience-company" href="https://ncc.plus/" target="_blank" rel="noreferrer">NCCPLUS <ArrowIcon /></a></h3><span>{vi ? 'Tháng 8 năm 2025 – nay' : 'August 2025 to present'}</span></div>
           <div className="experience-details">
             <p>{vi ? 'Vận hành và duy trì các quy trình ETL cho dữ liệu fintech, từ thu thập, xử lý, chuyển đổi đến phân phối dữ liệu. Theo dõi quy trình, khắc phục lỗi xử lý và kiểm tra các vấn đề về chất lượng dữ liệu.' : 'Operate and maintain fintech ETL pipelines for collecting, processing, transforming and delivering data. Monitor workflows, troubleshoot processing errors and investigate data-quality issues.'}</p>
             <p>{vi ? 'Hỗ trợ vận hành dữ liệu trên AWS S3, Lambda, Glue, EC2 và Athena; sử dụng Terraform, MySQL, Postman cho hạ tầng và kiểm thử; duy trì quy trình CI/CD bằng GitHub Actions.' : 'Support cloud data operations with AWS S3, Lambda, Glue, EC2 and Athena; use Terraform, MySQL and Postman for infrastructure and testing; maintain CI/CD workflows with GitHub Actions.'}</p>

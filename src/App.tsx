@@ -31,11 +31,11 @@ const pageTitles: Record<Language, Record<PageName, string>> = {
     profile: 'Professional Profile | Khanh Pham Gia',
   },
   vi: {
-    home: 'Khanh Phạm Gia | Khoa học máy tính & Kỹ thuật dữ liệu',
-    research: 'Kinh nghiệm nghiên cứu | Khanh Phạm Gia',
-    publications: 'Công bố khoa học | Khanh Phạm Gia',
-    projects: 'Dự án tiêu biểu | Khanh Phạm Gia',
-    profile: 'Hồ sơ chuyên môn | Khanh Phạm Gia',
+    home: 'Phạm Gia Khánh | Khoa học máy tính & Kỹ thuật dữ liệu',
+    research: 'Kinh nghiệm nghiên cứu | Phạm Gia Khánh',
+    publications: 'Công bố khoa học | Phạm Gia Khánh',
+    projects: 'Dự án tiêu biểu | Phạm Gia Khánh',
+    profile: 'Hồ sơ chuyên môn | Phạm Gia Khánh',
   },
 };
 

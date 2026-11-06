@@ -353,7 +353,7 @@ export default function HomeDataCore({ theme, language }: { theme: 'light' | 'da
           </button>
         ))}
       </div>
-      <figcaption>{language === 'vi' ? 'Bốn lĩnh vực kết nối · Khanh Pham Gia' : 'Four connected focus areas · Khanh Pham Gia'}</figcaption>
+      <figcaption>{language === 'vi' ? 'Bốn lĩnh vực kết nối · Phạm Gia Khánh' : 'Four connected focus areas · Khanh Pham Gia'}</figcaption>
     </figure>
   );
 }

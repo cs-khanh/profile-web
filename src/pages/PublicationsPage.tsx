@@ -1,3 +1,4 @@
+import ArrowIcon from '../components/ArrowIcon';
 import { motion } from 'motion/react';
 import EditorialSculpture from '../EditorialSculpture';
 import type { Language } from '../components/SiteHeader';
@@ -32,7 +33,7 @@ export default function PublicationsPage({ theme, language }: { theme: 'light' |
           <div className="paper-meta">
             <p>{vi ? 'Hội nghị Quốc tế về Công nghệ Thông tin Thông minh (ICIIT), 2026' : 'International Conference on Intelligent Information Technology (ICIIT), 2026'}</p>
             <p>{vi ? 'Được lập chỉ mục trong Scopus' : 'Indexed in Scopus'}</p>
-            <a href="https://dl.acm.org/doi/10.1145/3805862.3805922" target="_blank" rel="noreferrer">{vi ? 'Đọc bài báo trên ACM' : 'Read paper at ACM'} <span aria-hidden="true">↗</span></a>
+            <a href="https://dl.acm.org/doi/10.1145/3805862.3805922" target="_blank" rel="noreferrer">{vi ? 'Đọc bài báo trên ACM' : 'Read paper at ACM'} <ArrowIcon /></a>
           </div>
         </motion.article>
 

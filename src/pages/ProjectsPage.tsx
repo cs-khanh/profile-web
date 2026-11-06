@@ -1,3 +1,4 @@
+import ArrowIcon from '../components/ArrowIcon';
 import { motion } from 'motion/react';
 import HeroSculpture from '../HeroSculpture';
 import type { Language } from '../components/SiteHeader';
@@ -10,7 +11,7 @@ const reveal = {
 };
 
 function RepoLink({ href, language }: { href: string; language: Language }) {
-  return <a className="project-link" href={href} target="_blank" rel="noreferrer">{language === 'vi' ? 'Xem dự án trên GitHub' : 'View project on GitHub'} <span aria-hidden="true">↗</span></a>;
+  return <a className="project-link" href={href} target="_blank" rel="noreferrer">{language === 'vi' ? 'Xem dự án trên GitHub' : 'View project on GitHub'} <ArrowIcon /></a>;
 }
 
 export default function ProjectsPage({ theme, language }: { theme: 'light' | 'dark'; language: Language }) {
@@ -51,8 +52,8 @@ export default function ProjectsPage({ theme, language }: { theme: 'light' | 'da
           <p>{vi ? 'Xây dựng hệ thống hỏi đáp trên tài liệu cho bộ dữ liệu Viet-Doc-VQA gồm 51.856 ảnh và 310.952 cặp câu hỏi – câu trả lời. Hệ thống kết hợp đặc trưng hình ảnh từ InternViT với khả năng xử lý ngôn ngữ tiếng Việt.' : 'Built a text-visual QA system for Viet-Doc-VQA: 51,856 document images and 310,952 question and answer pairs. The pipeline combines visual features from InternViT with Vietnamese language understanding.'}</p>
           <p>{vi ? 'Mô hình VinTern-1B-v2 sau tinh chỉnh đạt BLEU 0,0689, ROUGE-1 0,6558, ROUGE-2 0,4745 và ROUGE-L 0,5349.' : 'Fine-tuned VinTern-1B-v2 reached BLEU 0.0689, ROUGE-1 0.6558, ROUGE-2 0.4745 and ROUGE-L 0.5349.'}</p>
           <p className="project-tools">InternViT · PhoBERT · Qwen2 · VinTern-1B-v2</p>
-          <a className="project-link" href="https://github.com/cs-khanh/NLP_Visual_Question_Answering" target="_blank" rel="noreferrer">{vi ? 'Xem dự án trên GitHub' : 'View project on GitHub'} <span aria-hidden="true">↗</span></a>
-          <a className="project-link secondary-project-link" href="https://huggingface.co/datasets/5CD-AI/Viet-Doc-VQA-flash2" target="_blank" rel="noreferrer">{vi ? 'Khám phá bộ dữ liệu' : 'Explore the dataset'} <span aria-hidden="true">↗</span></a>
+          <a className="project-link" href="https://github.com/cs-khanh/NLP_Visual_Question_Answering" target="_blank" rel="noreferrer">{vi ? 'Xem dự án trên GitHub' : 'View project on GitHub'} <ArrowIcon /></a>
+          <a className="project-link secondary-project-link" href="https://huggingface.co/datasets/5CD-AI/Viet-Doc-VQA-flash2" target="_blank" rel="noreferrer">{vi ? 'Khám phá bộ dữ liệu' : 'Explore the dataset'} <ArrowIcon /></a>
         </div>
       </motion.article>
     </main>

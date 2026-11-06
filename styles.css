@@ -221,7 +221,9 @@ h1, h2, h3, p, figure { margin: 0; }
 .experience-entry h3, .education-entry h3, .thesis-line h3 { font-size: clamp(22px, 2.7vw, 36px); line-height: 1.2; letter-spacing: -.045em; }
 .experience-company { color: var(--accent); text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 5px; transition: text-decoration-color 180ms ease; }
 .experience-company:hover, .experience-company:focus-visible { text-decoration-color: currentColor; }
-.experience-company span { display: inline-block; margin: 0; color: var(--accent); font-size: .62em; vertical-align: top; }
+.arrow-icon { display: inline-block; flex: none; line-height: 1; }
+.arrow-icon svg { display: block; width: 1em; height: 1em; }
+.experience-company .arrow-icon { margin: 0; color: var(--accent); font-size: .8em; }
 .experience-entry span, .education-entry p, .thesis-line span { display: block; margin-top: 10px; color: var(--accent); font-size: 15px; }
 .experience-details p, .education-proof span, .recognition-content p, .skills-rows span { color: var(--soft-ink); line-height: 1.65; }
 .experience-details p + p { margin-top: 17px; }
